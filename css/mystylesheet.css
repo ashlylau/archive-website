@@ -17,9 +17,15 @@
   padding: 20px 10% 20px 10%;
 } */
 
+header .container {
+  padding-bottom: 10px;
+}
+
 .container {
   padding-right: 10%;
   padding-left: 10%;
+  padding top: 20px;
+  padding-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -72,6 +78,28 @@ body {
   float: right;
 }
 
+li {
+    display: block;
+}
+
+li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content:"\2212";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
+
+@media screen and (max-width:480px) {
+  .media-body ul {
+    display: none;
+  }
+}
+
+
 /* .sidenav {
   height: 100%;
   width: 100px;
@@ -88,13 +116,31 @@ body {
   margin-top: 100px;
 } */
 
-.content-margin {
+ul {
+  margin-left: 0px;
+}
+
+li {
+  margin-left: 0px;
+}
+
+.top-margin {
   margin-top: 100px;
 }
 
 #contact {
   margin-bottom: 50px;
 }
+
+#contact a {
+  color: #333333;
+}
+
+#contact a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
 /* .project-page h1 {
   margin-top: 100px;
 } */
