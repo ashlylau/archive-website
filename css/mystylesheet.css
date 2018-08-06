@@ -94,7 +94,7 @@ li:before {
 }
 
 @media screen and (max-width:480px) {
-  .media-body ul, p {
+   .hide-mobile {
     display: none;
   }
 }
